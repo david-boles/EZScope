@@ -26,6 +26,7 @@ public class ControlPanel extends JPanel {
 	private JTextField sPS;
 	private JCheckBox consLog;
 	private JTextField numSamp;
+	public JButton capture;
 
 	public boolean consLogVal = true;
 	public int sPSVal = 44100;
@@ -102,7 +103,7 @@ public class ControlPanel extends JPanel {
 		CapturePanel.add(captureInfo, BorderLayout.CENTER);
 		captureInfo.setColumns(10);
 		
-		JButton capture = new JButton("Capture!");
+		capture = new JButton("Capture!");
 		capture.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Start.window.view.capture();
