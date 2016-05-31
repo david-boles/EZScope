@@ -8,7 +8,7 @@ import space.davidboles.lib.program.Logger;
 
 public class Start {
 	
-	public static final String version = "v0.0A";
+	public static final String version = "v0.1A";
 	
 	public static Scope window;
 	public static DefaultCapture capture = new DefaultCapture();

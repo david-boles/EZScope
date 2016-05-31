@@ -40,6 +40,7 @@ public class ViewPanel extends JPanel {
 					loc.createNewFile();
 				} catch (IOException e1) {
 				}
+				
 				boolean success = ProgramFs.saveString(loc, display.getText());
 				if(success) Start.window.logInfo("Waveform saved!");
 				else Start.window.logError("Save failed :(");
